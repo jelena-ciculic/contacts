@@ -1,0 +1,128 @@
+
+.container{
+
+padding-left: 30%;
+padding-right: 30%;
+padding-top: 5%;
+
+
+}
+
+
+body{
+    font-family: "verdana";
+    overflow: auto; 
+        
+  }
+
+tr,td,th{
+
+	padding: 10px;
+	background-color: #e6e6e6;
+	text-align: center;
+	border-radius: 5px;
+
+}
+
+caption{
+	padding:10px;
+	font-size: 120%;
+	background-color:#47d147;
+	border-radius: 5px;
+	color:white;
+
+}
+
+caption button{
+  font-size: 100%;
+  font-style: none;
+  height: 33px;
+}
+
+caption input,caption button{
+  float:right;
+}
+
+form{
+	width: 74%;
+	box-shadow: 3px,3px;
+}
+
+
+label{
+    display:inline-block;
+    margin-bottom: 10px;
+  }
+
+  form input{
+  	float: right;
+  	width: 70%;
+
+  }
+
+
+
+form button{
+
+    background-color: #e6e6e6;
+
+  }
+
+  fieldset{
+  	border-radius: 5px;
+  }
+
+  fieldset button{
+  	float: right;
+  	border-radius: 5px;
+  	font-family: "verdana";
+  }
+
+  #btnEmpty,#btnSave,#btnLoad,#btnSort{
+
+  	border-radius: 5px;
+  	width: 80px;
+    height: 40px;
+    background-color: #e6e6e6;
+  	font-family: "verdana";
+
+  	
+  }
+
+
+  .error{
+
+  	background-color:pink;
+	 width:500px;
+	 height: 40px;
+	 border-radius: 5px;
+	 text-align: center;
+	 	
+
+  }
+ 
+
+  tr button{
+    border-radius: 5px;
+    margin-right: 3px;
+    font-family: "verdana";
+    background-color:white;
+    width: 60px;
+    height: 40px;
+  }
+
+  .w3-modal-content{
+
+  	/*
+    width:600px !important;
+    height: 350px !important;
+    border-radius:7px !important;
+    padding:30px !important;
+    */
+  }
+
+  .w3-modal{
+
+  	padding: 20px !important;
+  }
+

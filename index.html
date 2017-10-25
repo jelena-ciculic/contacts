@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--
+	<link rel="stylesheet" href="manager.css">
+-->
+
+	<link rel="stylesheet" href="app/css/main.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<title>Contact manager</title>
+	<meta charset="utf-8"/>
+	
+</head>
+<body>
+
+<div class="container">	
+
+	<div id="formDiv">
+	<form id="myForm" onsubmit="return formSubmitted();">
+		<fieldset>
+			<legend><i class="material-icons">person_add</i></legend>
+
+			<label for="name">Name:</label>
+			<input type="text" id="name" required><br> 
+
+			<label for="email">Email:</label>
+			<input type="email" id="email" required ><br>
+
+			<label for="phone">Phone number:</label>
+			<input type="text" id="phone" required ><br> 
+
+			<button id ="addCnt">add new contact</button>
+		</fieldset>
+	</form>
+	</div>
+
+
+	<p></p>
+
+	<div id="contactsDiv">
+		
+	</div>
+
+	<p></p>
+
+	<span id="btns">
+		
+	<button id="btnEmpty" onclick="emptyList();">empty</button>
+	<button id="btnSave" onclick="saveList();">save</button>
+	<button id="btnLoad" onclick="loadList();">load</button>
+	<button id="btnSort" onclick="sortList();">sort</button>
+	
+	</span>
+</div>
+
+
+
+<div id="id01" class="w3-modal">
+		<div class="w3-modal-content w3-animate-top">
+
+
+			<div class="w3-modal-container">
+				
+				
+			<span onclick="closeModal()" class="w3-button w3-display-topright">&times;</span>
+	
+
+	<form id="editForm" onsubmit="return editFormSubmitted();">
+					
+		<fieldset>
+			<legend>Edit contact</legend>
+		
+
+			<label for="nameEdit">Name:</label>
+			<input type="text" id="nameEdit"><br>
+
+			<label for="newName">New name:</label>
+			<input type="text" id="newName"><br>
+
+			<label for="emailEdit">Email:</label>
+			<input type="email" id="emailEdit"><br>
+
+
+			<label for="newEmail">New email:</label>
+			<input type="email" id="newEmail"><br>
+
+			<label for="phoneEdit">Phone number:</label>
+			<input type="text" id="phoneEdit"><br> 
+
+
+			<label for="newPhone">New phone number:</label>
+			<input type="text" id="newPhone"><br> 
+
+			<button id ="editCnt">Edit contact</button>
+		
+		</fieldset>
+
+	</form>
+
+
+
+
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<script src="app/js/main.js"></script>
+
+
+</body>
+</html>
