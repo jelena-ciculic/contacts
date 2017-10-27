@@ -252,20 +252,21 @@ function delContact(c){
 
 function findContact(){
 
-	var contactToFind = document.querySelector("#searchItem");
+	var contactToFind = document.querySelector("#searchItem").value;
 
 	var resultList=[];
 
+	var patt= new RegExp('^'+contactToFind,'i');
+	
 
-	cm.listOfContacts.forEach(function(current){
+	for(var i =0; i<cm.listOfContacts.length; i++){
 
-		if(current.name.startsWith(contactToFind.value) || 
-			current.email.startsWith(contactToFind.value) ||
-			 current.phoneNumber.startsWith(contactToFind.value)){
+		if(patt.test(cm.listOfContacts[i].name) ||
+		 	patt.test(cm.listOfContacts[i].email) || 
+		 	patt.test(cm.listOfContacts[i].phoneNumber))
+			resultList.push(cm.listOfContacts[i]);
+	}
 
-			resultList.push(current);
-		}
-	})
 
 	return resultList;
 }
